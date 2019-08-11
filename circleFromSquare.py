@@ -5,7 +5,7 @@ import turtle
 #function to draw a circle from drawing squares
 def draw_SquareCircle():
 	sc = turtle.Turtle()
-	sc.speed(50)
+	sc.speed(10)
 	sc.color('red')
 
 	window = turtle.Screen()
