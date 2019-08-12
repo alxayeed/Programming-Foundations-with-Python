@@ -2,6 +2,8 @@
 import webbrowser
 
 class Movie():
+	'''A class that  facilitates feature some information about movies'''
+	VALID_RATINGS = ['good','average','very good']
 
 	def __init__(self,title,info,poster,trailer):
 		self.title = title
