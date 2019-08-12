@@ -7,8 +7,9 @@ class Parent():
 		#instance variables,those are inside the constructor ,__init__() function
 		self.last_name =  last_name
 		self.eye_color = eye_color
-		print('Contructor of class Parent is initialized')
+		print('Contructor of class Parent is initialized\n')
 
+	#instance method
 	def show(self):
 		return self.eye_color
 
@@ -19,10 +20,17 @@ class Child(Parent):
 		Parent.__init__(self,last_name,eye_color)
 		self.age = age
 
-bob = Parent('Marley','blue')
-print(bob.last_name)
+	#method overloading
+	def show(self):
+		print('Child name is -',self.last_name)
+		print('Child eye color is -',self.eye_color)
+		print('Child age is -',self.age)
+		
+
+# bob = Parent('Marley','blue')
+# print(bob.last_name)
 billy = Child('cyrus','brown',20)
-print('my eye color is ',billy.show())
-print(billy.age)
+billy.show()
+
 
 
