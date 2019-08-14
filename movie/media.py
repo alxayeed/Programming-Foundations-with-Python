@@ -1,7 +1,7 @@
 #Movie details
 import webbrowser
 
-class Movie():
+class Movie:
 	'''A class that  facilitates feature some information about movies'''
 	VALID_RATINGS = ['good','average','very good']
 
